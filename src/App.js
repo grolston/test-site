@@ -1,5 +1,4 @@
 import logo from "./logo.svg";
-import { withAuthenticator } from '@aws-amplify/ui-react'
 import "@aws-amplify/ui-react/styles.css";
 import {
   withAuthenticator,
@@ -24,11 +23,11 @@ function App({ signOut }) {
   );
 }
 
-//modify the useEffect() function to include the checkUser() function call
-useEffect(() => {
-  fetchPosts();
-  checkUser(); // new function call
-});
+// //modify the useEffect() function to include the checkUser() function call
+// useEffect(() => {
+//   fetchPosts();
+//   checkUser(); // new function call
+// });
 
 //define the checkUser function after the existing fetchPosts() function
 async function checkUser() {
